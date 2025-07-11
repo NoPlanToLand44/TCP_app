@@ -1,4 +1,7 @@
 python -m venv .venv
 
-pip install 
-added some for conflict purpose
+python server_gui.py
+
+python console.py
+
+
