@@ -23,7 +23,7 @@ def start_server(host = "127.0.0.1", port = 65432, text_callback  = None):
             while True:
                 conn,addr = s.accept()
                 threading.Thread(target=handle_client, args = (conn, ), daemon = True).start()
-    # Create and start the server thread
+
     server_thread_instance = threading.Thread(target=server_thread, daemon=True)
     server_thread_instance.start()
 
